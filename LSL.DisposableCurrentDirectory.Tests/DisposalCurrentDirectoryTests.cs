@@ -45,7 +45,7 @@ public class DisposableCurrentDirectoryTests
     }
 
     [Test]
-    public void GivenAnInvalidRootedPath_ThenItShouldUseADisposableCurrentDirectory()
+    public void GivenAnInvalidRootedPath_ThenItShouldThrowTheExpectedException()
     {
         var currentDirectory = Directory.GetCurrentDirectory();
 
@@ -57,7 +57,7 @@ public class DisposableCurrentDirectoryTests
     }
 
     [Test]
-    public void GivenAnInvalidRelativePath_ThenItShouldUseADisposableCurrentDirectory()
+    public void GivenAnInvalidRelativePath_ThenItShouldThrowTheExpectedException()
     {
         var currentDirectory = Directory.GetCurrentDirectory();
 
